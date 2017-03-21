@@ -1,14 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package tubes;
 
-/**
- *
- * @author SagabAdi
- */
-public class Kurir {
+
+public class Kurir extends Pesanan{
+    private String idKurir, namaKurir;
+    
+    public Kurir(String idKurir, String namaKurir, String id, String asal, String tujuan){
+        super(id, asal, tujuan);
+        this.idKurir = idKurir;
+        this.namaKurir = namaKurir;
+    }
+
+    public String getNamaKurir() {
+        return namaKurir;
+    }
+
+    public void setNamaKurir(String namaKurir) {
+        this.namaKurir = namaKurir;
+    }
+
+    public String getIdKurir() {
+        return idKurir;
+    }
+
+    public void setIdKurir(String idKurir) {
+        this.idKurir = idKurir;
+    }
+    
+    
     
 }
